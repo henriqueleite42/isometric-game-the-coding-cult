@@ -20,21 +20,21 @@ public class StateMachineController : MonoBehaviour {
 	}
 
 	void Start() {
-		// ChangeTo<LoadState>();
+		ChangeTo<LoadState>();
 	}
 
 	public void ChangeTo<T>() where T:State {
 		State state = GetState<T>();
 
 		if (_current != state) {
-			// ChangeState(state);
+			ChangeState(state);
 		}
 	}
 
 	public T GetState<T>() where T:State {
 		T target = GetComponent<T>();
 
-		if (target != null) {
+		if (target == null) {
 			target = gameObject.AddComponent<T>();
 		}
 

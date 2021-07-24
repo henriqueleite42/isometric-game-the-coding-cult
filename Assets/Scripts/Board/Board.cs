@@ -18,18 +18,23 @@ public class Board : MonoBehaviour {
 		instance = this;
 	}
 
-	void Start() {
-		InitSequence();
-	}
+	public IEnumerator InitSequence(LoadState loadState) {
+		yield return StartCoroutine(LoadFloors(loadState));
 
-	public void InitSequence() {
-		LoadFloors();
+		yield return null;
+
+		Debug.Log("Tiles Count: " + tiles.Count);
+
 		ShadowOrdering();
+
+		yield return null;
 	}
 
-	void LoadFloors() {
+	IEnumerator LoadFloors(LoadState loadState) {
 		for (int i = 0; i < floors.Count; i++) {
 			List<Vector3Int> floorTiles = floors[i].LoadTiles();
+
+			yield return null;
 
 			for (int j = 0; j < floorTiles.Count; j++) {
 				if (!tiles.ContainsKey(floorTiles[j])) {

@@ -50,6 +50,7 @@
      <Compile Include="Assets\Dependencies\LeanTween\Framework\LTDescrOptional.cs" />
      <Compile Include="Assets\Scripts\Movement\Movement.cs" />
      <Compile Include="Assets\Scripts\Board\Board.cs" />
+     <Compile Include="Assets\Scripts\StateMachine\States\LoadState.cs" />
      <None Include="Assets\Dependencies\LowPolyTiles\License.txt" />
      <None Include="Assets\Dependencies\LeanTween\ReadMe.txt" />
      <None Include="Assets\Dependencies\Crusaider\License.txt" />
