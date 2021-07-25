@@ -41,6 +41,7 @@
      <Compile Include="Assets\Dependencies\LeanTween\Framework\LeanTweenExt.cs" />
      <Compile Include="Assets\Dependencies\LeanTween\Framework\LTSeq.cs" />
      <Compile Include="Assets\Dependencies\LeanTween\Framework\LeanAudio.cs" />
+     <Compile Include="Assets\Scripts\StateMachine\States\LoadState.cs" />
      <Compile Include="Assets\Scripts\Board\Floor.cs" />
      <Compile Include="Assets\Dependencies\LeanTween\Framework\LeanSmooth.cs" />
      <Compile Include="Assets\Scripts\StateMachine\StateMachineController.cs" />
@@ -50,7 +51,7 @@
      <Compile Include="Assets\Dependencies\LeanTween\Framework\LTDescrOptional.cs" />
      <Compile Include="Assets\Scripts\Movement\Movement.cs" />
      <Compile Include="Assets\Scripts\Board\Board.cs" />
-     <Compile Include="Assets\Scripts\StateMachine\States\LoadState.cs" />
+     <Compile Include="Assets\Scripts\StateMachine\States\RoamState.cs" />
      <None Include="Assets\Dependencies\LowPolyTiles\License.txt" />
      <None Include="Assets\Dependencies\LeanTween\ReadMe.txt" />
      <None Include="Assets\Dependencies\Crusaider\License.txt" />

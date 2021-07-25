@@ -14,6 +14,6 @@ public class LoadState : State {
 
 		yield return null;
 
-		// StateMachineController.instance.ChangeTo<>();
+		StateMachineController.instance.ChangeTo<RoamState>();
 	}
 }

@@ -7,6 +7,8 @@ public class StateMachineController : MonoBehaviour {
 
 	State _current;
 
+	public Transform selector;
+
 	bool busy;
 
 	public State current {
