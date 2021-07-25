@@ -48,10 +48,11 @@
      <Compile Include="Assets\Dependencies\LeanTween\Framework\LeanTest.cs" />
      <Compile Include="Assets\Scripts\Board\TileLogic.cs" />
      <Compile Include="Assets\Scripts\StateMachine\State.cs" />
+     <Compile Include="Assets\Scripts\StateMachine\States\RoamState.cs" />
      <Compile Include="Assets\Dependencies\LeanTween\Framework\LTDescrOptional.cs" />
      <Compile Include="Assets\Scripts\Movement\Movement.cs" />
+     <Compile Include="Assets\Scripts\IO\InputController.cs" />
      <Compile Include="Assets\Scripts\Board\Board.cs" />
-     <Compile Include="Assets\Scripts\StateMachine\States\RoamState.cs" />
      <None Include="Assets\Dependencies\LowPolyTiles\License.txt" />
      <None Include="Assets\Dependencies\LeanTween\ReadMe.txt" />
      <None Include="Assets\Dependencies\Crusaider\License.txt" />
