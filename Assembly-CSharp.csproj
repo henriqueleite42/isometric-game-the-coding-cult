@@ -53,9 +53,7 @@
      <Compile Include="Assets\Scripts\Movement\Movement.cs" />
      <Compile Include="Assets\Scripts\IO\InputController.cs" />
      <Compile Include="Assets\Scripts\Board\Board.cs" />
-     <None Include="Assets\Dependencies\LowPolyTiles\License.txt" />
      <None Include="Assets\Dependencies\LeanTween\ReadMe.txt" />
-     <None Include="Assets\Dependencies\Crusaider\License.txt" />
      <None Include="Assets\Dependencies\LeanTween\License.txt" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/2020.3.14f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
