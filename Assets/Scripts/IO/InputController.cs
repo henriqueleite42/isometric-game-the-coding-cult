@@ -2,13 +2,31 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InputController : MonoBehaviour {
+public delegate void DelegateModel(object sender, object args);
 
+public class InputController : MonoBehaviour {
 	float hCooldown = 0;
 	float vCooldown = 0;
 	float cooldownTimer = 0.5f;
 
+	public static InputController instance;
+
+	public DelegateModel OnMove;
+	public DelegateModel OnFire;
+
+	void Awake() {
+		instance = this;
+	}
+
 	void Update() {
+		Move();
+
+		Fire1();
+
+		Fire2();
+	}
+
+	void Move() {
 		int h = Mathf.RoundToInt(Input.GetAxisRaw("Horizontal"));
 		int v = Mathf.RoundToInt(Input.GetAxisRaw("Vertical"));
 
@@ -26,8 +44,20 @@ public class InputController : MonoBehaviour {
 			vCooldown = 0;
 		}
 
-		if (moved != Vector2Int.zero) {
-			Debug.Log(moved);
+		if (moved != Vector2Int.zero && OnMove != null) {
+			OnMove(null, moved);
+		}
+	}
+
+	void Fire1() {
+		if (Input.GetButtonDown("Fire1") && OnFire != null) {
+			OnFire(null, 1);
+		}
+	}
+
+	void Fire2() {
+		if (Input.GetButtonDown("Fire2") && OnFire != null) {
+			OnFire(null, 2);
 		}
 	}
 
