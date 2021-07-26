@@ -41,6 +41,7 @@
      <Compile Include="Assets\Dependencies\LeanTween\Framework\LeanTweenExt.cs" />
      <Compile Include="Assets\Dependencies\LeanTween\Framework\LTSeq.cs" />
      <Compile Include="Assets\Dependencies\LeanTween\Framework\LeanAudio.cs" />
+     <Compile Include="Assets\Scripts\Board\TileSelector.cs" />
      <Compile Include="Assets\Scripts\StateMachine\States\LoadState.cs" />
      <Compile Include="Assets\Scripts\Board\Floor.cs" />
      <Compile Include="Assets\Dependencies\LeanTween\Framework\LeanSmooth.cs" />
